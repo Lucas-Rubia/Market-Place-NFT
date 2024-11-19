@@ -1,5 +1,9 @@
+import { ProductList } from "./product-list";
+
 export function Home() {
     return(
-        <h1>HOME</h1>
+        <main>
+            <ProductList/>
+        </main>
     )
 }
