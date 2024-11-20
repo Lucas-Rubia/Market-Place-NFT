@@ -1,7 +1,6 @@
 import { COLLECTIONS } from "@/data";
 import { currencyFormat } from "@/utils/currency-format";
 import { Check } from "lucide-react";
-import React from "react";
 
 export function ListCollections() {
   const groupedCollections = [
