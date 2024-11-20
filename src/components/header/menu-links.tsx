@@ -1,6 +1,7 @@
 import { ChevronRight } from "lucide-react";
 import { Button } from "../ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../ui/dropdown-menu";
+import { MARKETPLACE_LINKS, RESOURCES_LINKS } from "@/data";
 
 export function MenuLinks() {
   return (
@@ -12,10 +13,11 @@ export function MenuLinks() {
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent>
-          <DropdownMenuItem>Home</DropdownMenuItem>
-          <DropdownMenuItem>Discover</DropdownMenuItem>
-          <DropdownMenuItem>Activities</DropdownMenuItem>
-          <DropdownMenuItem>Collection Verification</DropdownMenuItem>
+          {MARKETPLACE_LINKS.map((link, index) => (
+            <DropdownMenuItem key={index}>
+              {link.label}
+            </DropdownMenuItem>
+          ))}
         </DropdownMenuContent>
       </DropdownMenu>
 
@@ -26,8 +28,11 @@ export function MenuLinks() {
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent>
-          <DropdownMenuItem>Help Center</DropdownMenuItem>
-          <DropdownMenuItem>FAQs</DropdownMenuItem>
+          {RESOURCES_LINKS.map((link, index) => (
+            <DropdownMenuItem key={index}>
+              {link.label}
+            </DropdownMenuItem>
+          ))}
         </DropdownMenuContent>
       </DropdownMenu>
     </div>
