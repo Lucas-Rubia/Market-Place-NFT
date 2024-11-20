@@ -61,6 +61,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background font-sora text-foreground;
+    @apply bg-[#080a0c] font-sora text-foreground;
   }
 }
