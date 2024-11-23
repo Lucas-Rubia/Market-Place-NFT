@@ -27,7 +27,7 @@ export function ListCollections() {
                 <img
                   src={collection.image}
                   alt={collection.name}
-                  className="w-16"
+                  className="w-16]"
                 />
                 {collection.purchased && (
                   <Check className="absolute bottom-0.5 right-1 bg-[#00DBB6] rounded-full size-5 p-1 stroke-[4px]" />
